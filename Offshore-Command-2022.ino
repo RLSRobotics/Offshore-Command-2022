@@ -1,4 +1,3 @@
-
 void setup() {
   Serial.begin(9600);
   pinMode(13, OUTPUT);
@@ -7,7 +6,6 @@ void setup() {
 
 void loop() {
   if(Serial.available() >= 1) {
-    
     digitalWrite(13, Serial.read());
   }
 }
