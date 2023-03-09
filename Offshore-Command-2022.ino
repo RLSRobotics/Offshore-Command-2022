@@ -42,7 +42,10 @@ void setup() {
 void loop() {
   //note: expecting byte array of x elements from python, bytearray([a, b, c]) works in python
   //set integer as the number of bytes expected to be sent through python
+
+  //0 = test "A" button, 1-6 = motors
   while (Serial.available() < 7);
+
   int bytesToRead = Serial.available();
   byte input[bytesToRead];
   
